@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="9" skipped="0" failures="9" errors="0" timestamp="2022-03-13T20:18:54" hostname="AirvonFrederik.fritz.box" time="0.049">
+<testsuite name="Tests" tests="9" skipped="0" failures="9" errors="0" timestamp="2022-03-13T20:39:48" hostname="AirvonFrederik.fritz.box" time="0.056">
   <properties/>
-  <testcase name="task_01()" classname="Tests" time="0.042">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+  <testcase name="task_01()" classname="Tests" time="0.048">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -96,11 +96,11 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="task_02()" classname="Tests" time="0.001">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+  <testcase name="task_02()" classname="Tests" time="0.0">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -192,10 +192,10 @@
 </failure>
   </testcase>
   <testcase name="task_03()" classname="Tests" time="0.001">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -286,11 +286,11 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="task_04()" classname="Tests" time="0.0">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+  <testcase name="task_04()" classname="Tests" time="0.001">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -382,10 +382,10 @@
 </failure>
   </testcase>
   <testcase name="task_05()" classname="Tests" time="0.0">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -477,10 +477,10 @@
 </failure>
   </testcase>
   <testcase name="task_06()" classname="Tests" time="0.0">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -571,11 +571,11 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="task_07()" classname="Tests" time="0.001">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+  <testcase name="task_07()" classname="Tests" time="0.0">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -667,10 +667,10 @@
 </failure>
   </testcase>
   <testcase name="task_08()" classname="Tests" time="0.001">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -762,10 +762,10 @@
 </failure>
   </testcase>
   <testcase name="task_09()" classname="Tests" time="0.001">
-    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.CentralUnit.getxFLF()&quot; because &quot;centralUnit&quot; is null
-	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:16)
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;FLF.FLF.getxWaterTank()&quot; because the return value of &quot;FLF.CentralUnit.getxFLF()&quot; is null
+	at FLF.TankFuelLED.&lt;init&gt;(TankFuelLED.java:15)
 	at FLF.ControlPanel.&lt;init&gt;(ControlPanel.java:16)
-	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:744)
+	at FLF.FLF$Builder.&lt;init&gt;(FLF.java:746)
 	at Tests.setup(Tests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)

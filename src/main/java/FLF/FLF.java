@@ -724,7 +724,6 @@ public class FLF {
             xTwoTwoBox.setxBattery(xBattery);
             xElectricEngine = new ElectricEngine[]{new ElectricEngine(0), new ElectricEngine(1)};
 
-
             //Turrets
             xFrontWaterCannon = new FrontWaterCannon();
             xSecondSegment = new SecondSegment[]{new SecondSegment(SecondSeg.SIXMETER), new SecondSegment(SecondSeg.SIXMETER), new SecondSegment(SecondSeg.FIVEMETER)};
@@ -748,17 +747,16 @@ public class FLF {
             xIntelligientJoyStickFront = new IntelligientJoyStickFront();
             xIntelligientJoyStickRoof = new IntelligientJoyStickRoof();
 
-            xFloorSprayNozzles = new FloorSprayNozzles[]{new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()),
-                    new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF())};
-            for (int i = 0; i < 7; i++) {
-                xFloorSprayNozzles[i].setpWaterTank(xWaterTank);
-            }
-
             //Tank
             xFoamTank = new FoamTank(xControlPanel);
             xWaterTank = new WaterTank();
             xMixingPlant = new MixingPlant(xFoamTank, xWaterTank);
 
+            xFloorSprayNozzles = new FloorSprayNozzles[]{new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()),
+                    new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF())};
+            for (int i = 0; i < 7; i++) {
+                xFloorSprayNozzles[i].setpWaterTank(xWaterTank);
+            }
             xCentralUnit.init();
         }
 

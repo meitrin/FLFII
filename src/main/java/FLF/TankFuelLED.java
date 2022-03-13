@@ -6,14 +6,13 @@ import Tank.WaterTank;
 
 public class TankFuelLED implements Observer{
 
-    private String tank;
     private LEDColor ledColor;
     private WaterTank waterTank;
     private FoamTank foamTank;
 
     public TankFuelLED(String tank, CentralUnit centralUnit){
         ledColor=LEDColor.NOT;
-        if(tank.equals("water")){waterTank=centralUnit.getxFLF().getxWaterTank();}
+        if(tank.equals("water")){waterTank= centralUnit.getxFLF().getxWaterTank();}
         if(tank.equals("foam")){foamTank=centralUnit.getxFLF().getxFoamTank();}
     }
 

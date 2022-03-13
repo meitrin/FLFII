@@ -24,11 +24,11 @@ public class CentralUnit {
     private Cabin xCabin;
     private EventBus eventBus;
 
-    public CentralUnit(SteeringWheel xSteeringWheel, Accelerator xAccelerator, BrakePedal xBrakePedal, ControlPanel xControlPanel) {
+    public CentralUnit(SteeringWheel xSteeringWheel, Accelerator xAccelerator, BrakePedal xBrakePedal, ControlPanel controlPanel) {
         this.xSteeringWheel = xSteeringWheel;
         this.xAccelerator = xAccelerator;
         this.xBrakePedal = xBrakePedal;
-        this.xControlPanel = xControlPanel;
+        this.xControlPanel = controlPanel;
         this.eventBus = new EventBus("cu");
     }
 

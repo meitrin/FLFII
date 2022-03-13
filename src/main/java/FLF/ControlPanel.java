@@ -13,8 +13,8 @@ public class ControlPanel {
 
     public ControlPanel(Switch[] xSwitch, CentralUnit centralUnit) {
         this.xSwitch = xSwitch;
-        this.waterWatch=new TankFuelLED("water", xCentralUnit);
-        this.foamWatch=new TankFuelLED("foam", xCentralUnit);
+        this.waterWatch=new TankFuelLED("water", centralUnit);
+        this.foamWatch=new TankFuelLED("foam", centralUnit);
     }
 
     public LEDColor getWater(){return waterWatch.getLedColor();}
