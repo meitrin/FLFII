@@ -1,4 +1,5 @@
 import FLF.*;
+import Lights.Switch;
 import Lights.SwitchType;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -29,7 +30,7 @@ public class Tests {
     @Test
     @Order(3)
     public void task_03(){
-
+        System.out.println("Wie sollen wir das hier überprüfen mit einem Test?");
     }
 
     @Test
@@ -47,6 +48,7 @@ public class Tests {
     @Test
     @Order(6)
     public void task_06(){
+        Switch switch = new Switch(SwitchType.WARNLIGHT);
 
     }
 
