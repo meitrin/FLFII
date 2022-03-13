@@ -1,7 +1,9 @@
-import FLF.FLF;
+import FLF.*;
 import Lights.SwitchType;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
+
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 public class Tests {
     private FLF flf;
@@ -19,9 +21,50 @@ public class Tests {
 
     @Test
     @Order(2)
-    public void task_02() throws Exception {
+    public void task_02() throws Exception{
         flf.getxCentralUnit().execute(SwitchType.WARNLIGHT);
         assertTrue(flf.getxWarnLight()[0].isOn());
     }
 
+    @Test
+    @Order(3)
+    public void task_03(){
+
+    }
+
+    @Test
+    @Order(4)
+    public void task_04(){
+
+    }
+
+    @Test
+    @Order(5)
+    public void task_05(){
+
+    }
+
+    @Test
+    @Order(6)
+    public void task_06(){
+
+    }
+
+    @Test
+    @Order(7)
+    public void task_07(){
+
+    }
+
+    @Test
+    @Order(8)
+    public void task_08(){
+
+    }
+
+    @Test
+    @Order(9)
+    public void task_09(){
+
+    }
 }
