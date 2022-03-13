@@ -16,7 +16,7 @@ public class Employees extends Person {
     public void load() {
         xWaterTank.fill();
         xFoamTank.fill();
-        BatteryManagement.instance.charge();
+        BatteryManagement.instance.chargeThree(300,300,400);
     }
 
     public void setxFoamTank(FoamTank xFoamTank) {
