@@ -9,7 +9,6 @@ public class SmallLightBlue extends Lights {
     private LightPosition position;
 
     public SmallLightBlue(LightPosition position,int id) {
-        super(id);
         this.position = position;
     }
 

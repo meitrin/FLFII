@@ -9,7 +9,6 @@ public class Headlights extends Lights {
     private LightPosition position;
 
     public Headlights(LightPosition position, int id) {
-        super(id);
         this.position = position;
     }
 

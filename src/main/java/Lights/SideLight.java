@@ -8,7 +8,6 @@ public class SideLight extends Lights {
     private LightPosition position;
 
     public SideLight(LightPosition position,int id) {
-        super(id);
         this.position = position;
     }
 

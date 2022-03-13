@@ -9,7 +9,6 @@ public class WarnLight extends Lights {
     private LightPosition position;
 
     public WarnLight(LightPosition position,int id){
-        super(id);
         this.position = position;
     }
 

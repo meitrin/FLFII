@@ -10,7 +10,6 @@ public class LargeLightBlue extends Lights {
     private LightPosition position;
 
     public LargeLightBlue(LightPosition position,int id) {
-        super(id);
         this.position = position;
     }
 
