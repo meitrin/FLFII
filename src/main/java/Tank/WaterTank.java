@@ -8,9 +8,8 @@ import java.util.ArrayList;
 public class WaterTank extends Tank {
 
     private ArrayList<Observer> waterList;
-    private ControlPanel controlPanel;
 
-    public WaterTank(){
+    public WaterTank(ControlPanel controlPanel){
         this.waterList=new ArrayList<>();
         addObserver(controlPanel.getWaterWatch());
     }

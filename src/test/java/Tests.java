@@ -16,7 +16,7 @@ public class Tests {
     @Test
     @Order(1)
     public void task_01(){
-        System.out.println("Wie Sie sehen können, ist für task_01 eine Komponente erstellt.");
+        System.out.println("Wie Sie sehen koennen, ist fuer task_01 eine Komponente erstellt.");
     }
 
     @Test

@@ -740,7 +740,7 @@ public class FLF {
 
             //build mainclasses
             xCentralUnit = new CentralUnit(xSteeringWheel, xAccelerator, xBrakePedal, xControlPanel);
-            xControlPanel = new ControlPanel(xSwitch, xCentralUnit);
+            xControlPanel = new ControlPanel(xSwitch, xCentralUnit, xWaterTank, xFoamTank);
             xOperatorSection = new OperatorSection(xJoyStickRoof, xControlPanel, xRoofExtinguishingArm);
             xDriverSection = new DriverSection(xAccelerator, xBrakePedal, xJoyStickFront, xFrontWaterCannon);
             xCabin = new Cabin(xBusDoor, xResidualQuantitiesDisplay, xSpeedometer, xJoyStick, xSeat, xRotaryKnob, xOperatorSection, xDriverSection, xCentralUnit);
@@ -749,7 +749,7 @@ public class FLF {
 
             //Tank
             xFoamTank = new FoamTank(xControlPanel);
-            xWaterTank = new WaterTank();
+            xWaterTank = new WaterTank(xControlPanel);
             xMixingPlant = new MixingPlant(xFoamTank, xWaterTank);
 
             xFloorSprayNozzles = new FloorSprayNozzles[]{new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()), new FloorSprayNozzles(1, xCentralUnit.getxFLF()),
@@ -757,7 +757,6 @@ public class FLF {
             for (int i = 0; i < 7; i++) {
                 xFloorSprayNozzles[i].setpWaterTank(xWaterTank);
             }
-            xCentralUnit.init();
         }
 
         public FLF build() {
@@ -793,6 +792,7 @@ public class FLF {
             flf.getxIntelligientJoyStickRoof().setxRoofExtinguishingArm(xRoofExtinguishingArm);
             flf.getxRoofExtinguishingArm().setxRotaryKnobRoofExtinguishingArm(xRotaryKnobRoofExtinguishingArm);
             for(int i = 0; i < 2; i++) flf.getxButton()[i].setCabin(xCabin);
+            xCentralUnit.init();
             return flf;
         }
     }

@@ -10,10 +10,10 @@ public class TankFuelLED implements Observer{
     private WaterTank waterTank;
     private FoamTank foamTank;
 
-    public TankFuelLED(String tank, CentralUnit centralUnit){
+    public TankFuelLED(String tank, WaterTank waterTank, FoamTank foamTank){
         ledColor=LEDColor.NOT;
-        if(tank.equals("water")){waterTank= centralUnit.getxFLF().getxWaterTank();}
-        if(tank.equals("foam")){foamTank=centralUnit.getxFLF().getxFoamTank();}
+        if(tank.equals("water")){waterTank= waterTank;}
+        if(tank.equals("foam")){foamTank=foamTank;}
     }
 
     @Override

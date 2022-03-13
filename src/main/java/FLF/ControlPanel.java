@@ -3,6 +3,8 @@ package FLF;
 import Cabin.LeftRightPosition;
 import Lights.Switch;
 import Lights.SwitchType;
+import Tank.FoamTank;
+import Tank.WaterTank;
 
 public class ControlPanel {
     private Switch[] xSwitch;
@@ -11,10 +13,11 @@ public class ControlPanel {
     private TankFuelLED waterWatch;
     private TankFuelLED foamWatch;
 
-    public ControlPanel(Switch[] xSwitch, CentralUnit centralUnit) {
+    public ControlPanel(Switch[] xSwitch, CentralUnit centralUnit, WaterTank waterTank, FoamTank foamTank) {
         this.xSwitch = xSwitch;
-        this.waterWatch=new TankFuelLED("water", centralUnit);
-        this.foamWatch=new TankFuelLED("foam", centralUnit);
+        this.xCentralUnit=centralUnit;
+        this.waterWatch=new TankFuelLED("water", waterTank,foamTank);
+        this.foamWatch=new TankFuelLED("foam", waterTank,foamTank);
     }
 
     public LEDColor getWater(){return waterWatch.getLedColor();}
