@@ -7,6 +7,7 @@ import Lights.SwitchType;
 public class ControlPanel {
     private Switch[] xSwitch;
     private CentralUnit xCentralUnit;
+    private SwitchCommand switchCommand;
 
     public ControlPanel(Switch[] xSwitch) {
         this.xSwitch = xSwitch;
@@ -15,7 +16,7 @@ public class ControlPanel {
     public void pressSwitch(SwitchType switchtype) throws Exception{
         for (int i = 0; i < 7; i++) {
             if (xSwitch[i].getSwitchType().equals(switchtype)) {
-                xCentralUnit.execute(switchtype);
+                switchCommand.command(switchtype);
                 xSwitch[i].press(switchtype);
             }
         }
