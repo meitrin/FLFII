@@ -30,6 +30,9 @@ public class CentralUnit {
         this.xBrakePedal = xBrakePedal;
         this.xControlPanel = xControlPanel;
         this.eventBus = new EventBus("cu");
+    }
+
+    public void init(){
         this.addSubscriber(flf.getxElectricEngine()[0]);
         this.addSubscriber(flf.getxElectricEngine()[1]);
         this.addSubscriber(flf.getxWarnLight()[0]);

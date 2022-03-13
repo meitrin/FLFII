@@ -8,9 +8,8 @@ import java.util.ArrayList;
 public class FoamTank extends Tank {
 
     private ArrayList<Observer> foamList;
-    private ControlPanel controlPanel;
 
-    public FoamTank(){
+    public FoamTank(ControlPanel controlPanel){
         this.foamList=new ArrayList<>();
         addObserver(controlPanel.getFoamWatch());
     }
