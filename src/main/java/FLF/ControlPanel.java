@@ -8,10 +8,17 @@ public class ControlPanel {
     private Switch[] xSwitch;
     private CentralUnit xCentralUnit;
     private SwitchCommand switchCommand;
+    private TankFuelLED waterWatch;
+    private TankFuelLED foamWatch;
 
     public ControlPanel(Switch[] xSwitch) {
         this.xSwitch = xSwitch;
+        this.waterWatch=new TankFuelLED("water");
+        this.foamWatch=new TankFuelLED("foam");
     }
+
+    public LEDColor getWater(){return waterWatch.getLedColor();}
+    public LEDColor getFoam(){return foamWatch.getLedColor();}
 
     public void pressSwitch(SwitchType switchtype) throws Exception{
         for (int i = 0; i < 7; i++) {
@@ -34,6 +41,8 @@ public class ControlPanel {
         }
         return false;
     }
+    public TankFuelLED getWaterWatch(){return waterWatch;}
+    public TankFuelLED getFoamWatch(){return foamWatch;}
 
     public void pressSwitchIndicator(LeftRightPosition position) {
         xCentralUnit.pressSwitchIndicator(position);

@@ -1,6 +1,30 @@
 package Tank;
 
+import FLF.ControlPanel;
+import FLF.Observer;
+
+import java.util.ArrayList;
+
 public class FoamTank extends Tank {
+
+    private ArrayList<Observer> foamList;
+    private ControlPanel controlPanel;
+
+    public FoamTank(){
+        this.foamList=new ArrayList<>();
+        addObserver(controlPanel.getFoamWatch());
+    }
+
+    public void addObserver(Observer observer){
+        foamList.add(observer);
+    }
+    public void removeObserver(Observer observer){
+        foamList.remove(observer);
+    }
+    public void update(){
+        for(Observer observer : foamList){observer.update();}
+    }
+
 
     char[][][] capacity = new char[75][45][10];
 
@@ -12,6 +36,7 @@ public class FoamTank extends Tank {
                 }
             }
         }
+        update();
     }
 
     public char[] foam(int mode) {
@@ -33,6 +58,7 @@ public class FoamTank extends Tank {
                 }
             }
         }
+        update();
         return foam;
     }
 
