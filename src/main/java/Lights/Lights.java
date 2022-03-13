@@ -7,8 +7,8 @@ public abstract class Lights extends Subscriber {
     private LightPosition position;
     private boolean isOn;
 
-    public Lights(int id) {
-        super(id);
+    public Lights(){
+        super(1);
     }
 
     public boolean isOn() {
@@ -18,5 +18,4 @@ public abstract class Lights extends Subscriber {
     public void setOn(boolean on) {
         isOn = on;
     }
-
 }
